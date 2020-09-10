@@ -1,5 +1,8 @@
 .App {
   text-align: center;
+  width: 80%;
+  max-width: 1170px;
+  margin: auto;
 }
 
 .App-logo {
@@ -35,4 +38,30 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.message-box {
+  width: 100%;
+  height: calc(100vh - 300px);
+  position: relative;
+}
+.message-box__container {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  overflow: auto;
+  max-height: 100%;
+}
+
+.message-form {
+  bottom: 10px;
+  z-index: 1;
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: space-between;
+  width: 100%;
+}
+.message-form > .MuiInput-root {
+  flex-grow: 1;
+  margin-right: 20px;
 }
